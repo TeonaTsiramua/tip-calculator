@@ -15,8 +15,8 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 0.5rem;
-    height: 95vh;
+    height: 100%;
     width: 311px;
-    padding: 32px;
+    padding: clamp(0.5rem, 5vw, 2rem);
   }
 }
