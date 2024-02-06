@@ -52,6 +52,7 @@ export default function TipForm({
         <p className={styles.label}>Select Tip %</p>
         {[0.05, 0.1, 0.15, 0.25, 0.5].map((value) => (
           <button
+            key={value}
             className={`${styles.button} ${
               tip === value ? styles.selected : ""
             }`}
