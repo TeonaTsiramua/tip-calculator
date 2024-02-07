@@ -17,7 +17,7 @@ export default function TipResult({
   );
 
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <div className={styles.amountContainer}>
         <div className={styles.text}>
           Tip amount <br /> <span className={styles.person}> / person</span>
@@ -33,6 +33,6 @@ export default function TipResult({
       <button disabled={inputsEmpty} className={styles.button} onClick={reset}>
         RESET
       </button>
-    </div>
+    </article>
   );
 }

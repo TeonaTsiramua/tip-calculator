@@ -1,4 +1,6 @@
 import styles from "./tipForm.module.css";
+import iconPerson from "../assets/images/icon-person.svg";
+import iconDollar from "../assets/images/icon-dollar.svg";
 
 export default function TipForm({
   bill,
@@ -23,14 +25,15 @@ export default function TipForm({
   };
 
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       {/* Bill Input */}
 
       <div>
+        <img src={iconDollar} alt="dollar icon" className={styles.logo} />
         <label className={styles.label} htmlFor="bill">
           Bill
         </label>
-        <p className={styles.logo}>$</p>
+
         <input
           className={styles.input}
           placeholder="0"
@@ -82,10 +85,10 @@ export default function TipForm({
       {/* Number of People Input */}
 
       <div>
+        <img src={iconPerson} alt="person icon" className={styles.logo} />
         <label className={styles.label} htmlFor="numberOfPeople">
           Number of People <span className={styles.span}> {peopleError}</span>
         </label>
-        <p className={styles.logo}>o</p>
         <input
           style={inputStyle}
           className={styles.input}
@@ -101,6 +104,6 @@ export default function TipForm({
           onChange={(e) => setPeople(e.target.valueAsNumber)}
         />
       </div>
-    </div>
+    </article>
   );
 }

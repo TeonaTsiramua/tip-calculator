@@ -3,9 +3,12 @@ import TipCalculator from "./components/TipCalculator";
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
+      <h1>
+        Spli <br /> tter
+      </h1>
       <TipCalculator />
-    </div>
+    </main>
   );
 }
 

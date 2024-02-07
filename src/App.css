@@ -14,7 +14,24 @@ input::-webkit-inner-spin-button {
 .App {
   background-color: hsl(185, 41%, 84%);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 100%;
+}
+
+h1 {
+  color: hsla(180, 25%, 32%, 1);
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+@media (max-width: 880px) {
+  br {
+    display: none;
+  }
+
+  h1 {
+    font-size: small;
+  }
 }

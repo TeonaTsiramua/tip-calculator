@@ -39,7 +39,7 @@ export default function TipCalculator() {
   };
 
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <TipForm
         bill={bill}
         setBill={setBill}
@@ -56,6 +56,6 @@ export default function TipCalculator() {
         reset={reset}
         inputsEmpty={inputsEmpty}
       />
-    </div>
+    </article>
   );
 }
