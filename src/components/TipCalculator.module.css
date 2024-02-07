@@ -8,8 +8,6 @@
   border-radius: 20px;
   box-shadow: 0px 32px 43px 0px hsla(186, 38%, 50%, 0.2);
   padding: 2.813rem 2rem;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -49,5 +47,7 @@
     height: 100%;
     width: 311px;
     padding: clamp(0.5rem, 5vw, 2rem);
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }
